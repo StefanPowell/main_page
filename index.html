@@ -1,3 +1,313 @@
-<html>
-<h1>Stefan Powell</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiago Cogumbreiro</title>
+  <link href="https://fonts.googleapis.com/css?family=Arsenal|Quicksand|Droid+Sans+Mono|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="/css/bulma.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <section class="hero is-medium is-primary">
+  <div class="tabs is-toggle is-toggle-rounded is-centered"
+    style="margin-top:1em">
+    <ul>
+      <li>
+        <a href="mailto:tiago.cogumbreiro@umb.edu">
+          <span class="icon is-small"><i class="fas fa-envelope"></i></span>
+          <span>Email</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://gitlab.com/users/cogumbreiro/projects">
+          <span class="icon is-small"><i class="fas fa-download"></i></span>
+          <span>Software</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="hero-body has-text-centered" style="padding-top:2em;
+    padding-bottom:4em;">
+    <div class="container media" style="max-width:70em">
+      <figure class="image media-image" style="margin-right:3em">
+        <img class="is-rounded" src="/assets/portrait-256.jpg"
+          alt="Tiago Cogumbreiro" />
+      </figure>
+      <div class="media-content" style="font-size: 1.5rem; max-width: 45rem;">
+        <p>
+          Tiago is an assistant professor at UMass Boston. Tiago's research
+          helps programmers write software with fewer bugs.
+        </p>
+        <p style="padding-top:1em">
+          Tiago develops tools that localize errors, proves the correctness
+          of algorithms, and mines how we write code to identify anomalies.
+        </p>
+        <p style="padding-top:1em">
+          <a href="mailto:tiago.cogumbreiro@umb.edu">Tiago is looking for
+            self-motivated students
+            who are interested in improving the quality of our software.
+          </a></p>
+      </div>
+    </div> <!-- media content -->
+  </div> <!-- hero body -->
+
+</section> <!--Hero-->
+<section class="hero">
+  <div class="hero-body" style="padding: 0; padding-top: 2em; padding-bottom: 1em;">
+    <div class="container">
+    <h1 class="title has-text-centered">Projects</h1>
+    </div>
+    <div class="columns" style="padding: 0">
+      <div class="column is-10-desktop is-offset-1-desktop is-full-mobile">
+        <div class="tile is-ancestor section" style="padding: 0; padding-top: 2em;">
+          <div class="tile is-parent">
+            <div class="tile is-child notification">
+              <p class="title">Safer GPU programming</p>
+              <p class="subtitle">Localizing bugs caused by data-races & over-synchronization</p>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <div class="tile is-child notification">
+              <p class="title">Safer parallel runtimes</p>
+              <p class="subtitle">Proving the correctness of parallel runtimes and
+                  testing implementations</p>
+              </div>
+          </div>
+          <div class="tile is-parent">
+            <div href="#" class="tile is-child notification">
+              <p class="title">Large-scale bug localization</p>
+              <p class="subtitle">Data-mining source code to identify statistically-anomalous code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content">
+  <div class="columns">
+
+    <div class="column is-6 is-offset-1 is-centered">
+      <section id="pubs" class="section" style="padding:0">
+        <div class="tabs is-centered is-medium is-toggle">
+          <ul>
+            <li class="is-active">
+              <a>
+                <span>Publications</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://dblp.dagstuhl.de/pers/hd/c/Cogumbreiro:Tiago">
+                <span>@DBLP</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?user=4uTAp_gAAAAJ">
+                <span>@Scholar</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <ul>
+
+
+
+<li class="bib" id="cogumbreiro:armus-toplas">
+
+<b>Dynamic deadlock verification for general barrier synchronisation</b>.
+ Tiago Cogumbreiro, Raymond Hu, Francisco Martins, and Nobuko Yoshida.
+ In <em>TOPLAS</em>. ACM, 2018.
+ Accepted. <a href="assets/cogumbreiro-armus-toplas18.pdf">Preprint PDF.</a>
+[&nbsp;<a href="publications.html#cogumbreiro:armus-toplas">bib</a>&nbsp;]
+
+</li>
+
+<li class="bib" id="cogumbreiro:gorn">
+
+<b>Deadlock Avoidance in Parallel Programs with Futures: Why parallel tasks
+  should not wait for strangers</b>.
+ Tiago Cogumbreiro, Rishi Surendran, Francisco Martins, Vivek Sarkar,
+  Vasco&nbsp;T. Vasconcelos, and Max Grossman.
+ <em>Proceedings of the ACM on Programming Languages</em>, 1(OOPSLA),
+  2017.
+ <a href="https://gitlab.com/cogumbreiro/gorn/tree/oopsla17">Source code
+  and proof scripts</a>.
+[&nbsp;<a href="publications.html#cogumbreiro:gorn">bib</a>&nbsp;|
+<a href="http://dx.doi.org/10.1145/3143359">DOI</a>&nbsp;|
+<a href="assets/cogumbreiro-gorn.pdf">.pdf</a>&nbsp;]
+
+</li>
+
+<li class="bib" id="cogumbreiro:formalize-habanero-phasers">
+
+<b>Formalization of Habanero Phasers using Coq</b>.
+ Tiago Cogumbreiro, Jun Shirako, and Vivek Sarkar.
+ <em>Journal of Logical and Algebraic Methods in Programming</em>,
+  90:50–60, 2017.
+ <a href="https://cogumbreiro.github.io/jlamp17/">Online interpreter and
+  proof scripts</a>.
+[&nbsp;<a href="publications.html#cogumbreiro:formalize-habanero-phasers">bib</a>&nbsp;|
+<a href="http://dx.doi.org/10.1016/j.jlamp.2017.02.006">DOI</a>&nbsp;|
+<a href="assets/cogumbreiro-formalizing-phasers.pdf">.pdf</a>&nbsp;]
+
+</li>
+
+<li class="bib" id="murthy:dist-phasers">
+
+<b>Design and verification of distributed phasers</b>.
+ Karthik Murthy, Sri&nbsp;Raj Paul, Kuldeep&nbsp;S. Meel, Tiago Cogumbreiro, and
+  John&nbsp;M. Mellor-Crummey.
+ In <em>EuroPAR</em>, volume 9833 of <em>LNCS</em>, page 405–418.
+  Springer, 2016.
+[&nbsp;<a href="publications.html#murthy:dist-phasers">bib</a>&nbsp;|
+<a href="http://dx.doi.org/10.1007/978-3-319-43659-3_30">DOI</a>&nbsp;|
+<a href="http://link.springer.com/chapter/10.1007%2F978-3-319-43659-3_30">http</a>&nbsp;]
+
+</li>
+
+<li class="bib" id="cogumbreiro:phase-ordering">
+
+<b>Formalization of phase ordering</b>.
+ Tiago Cogumbreiro, Jun Shirako, and Vivek Sarkar.
+ In <em>PLACES</em>, volume 211 of <em>EPTCS</em>, page 13–24, 2016.
+
+  <a href="https://github.com/cogumbreiro/habanero-coq/tree/places16">Proof
+  scripts</a>.
+[&nbsp;<a href="publications.html#cogumbreiro:phase-ordering">bib</a>&nbsp;|
+<a href="http://dx.doi.org/10.4204/EPTCS.211.2">DOI</a>&nbsp;|
+<a href="assets/cogumbreiro-phase-ordering.pdf">.pdf</a>&nbsp;]
+
+</li>
+
+<li class="bib" id="cogumbreiro:armus">
+
+<b>Dynamic deadlock verification for general barrier synchronisation</b>.
+ Tiago Cogumbreiro, Raymond Hu, Francisco Martins, and Nobuko Yoshida.
+ In <em>PPoPP</em>, page 150–160. ACM, 2015.
+ <a href="https://bitbucket.org/cogumbreiro/armus/wiki/PPoPP15">Source
+  code</a>.
+  <a href="https://bitbucket.org/cogumbreiro/brenner-coq/commits/tag/v1.0">Proof
+  scripts</a>.
+[&nbsp;<a href="publications.html#cogumbreiro:armus">bib</a>&nbsp;|
+<a href="http://dx.doi.org/10.1145/2688500.2688519">DOI</a>&nbsp;|
+<a href="assets/cogumbreiro-armus.pdf">.pdf</a>&nbsp;]
+
+</li>
+
+<li class="bib" id="cogumbreiro:coordinating-phased-acts">
+
+<b>Coordinating phased activities while maintaining progress</b>.
+ Tiago Cogumbreiro, Francisco Martins, and Vasco&nbsp;Thudichum
+  Vasconcelos.
+ In <em>COORDINATION</em>, volume 7890, page 31–44. Springer, 2013.
+[&nbsp;<a href="publications.html#cogumbreiro:coordinating-phased-acts">bib</a>&nbsp;|
+<a href="http://dx.doi.org/10.1007/978-3-642-38493-6_3">DOI</a>&nbsp;|
+<a href="assets/cogumbreiro.martins.vasconcelos_coordinating-phased-acts.pdf">.pdf</a>&nbsp;]
+
+</li>
+
+<li class="bib" id="martins:types-x10-clocks">
+
+<b>Types for X10 Clocks</b>.
+ Francisco Martins, Vasco&nbsp;T. Vasconcelos, and Tiago Cogumbreiro.
+ In <em>PLACES</em>, volume&nbsp;69 of <em>EPTCS</em>, page 111–129, 2010.
+[&nbsp;<a href="publications.html#martins:types-x10-clocks">bib</a>&nbsp;|
+<a href="http://dx.doi.org/10.4204/EPTCS.69.8">DOI</a>&nbsp;|
+<a href="assets/martins.vasconcelos.cogumbreiro_types-for-x10-clocks.pdf">.pdf</a>&nbsp;]
+
+</li>
+
+<li class="bib" id="vasconcelos:type-inference-mil">
+
+<b>Type inference for deadlock detection in a multithreaded typed assembly
+  language</b>.
+ Vasco&nbsp;T. Vasconcelos, Francisco Martins, and Tiago Cogumbreiro.
+ In <em>PLACES</em>, volume&nbsp;17 of <em>EPTCS</em>, page 95–109, 2010.
+[&nbsp;<a href="publications.html#vasconcelos:type-inference-mil">bib</a>&nbsp;|
+<a href="http://dx.doi.org/10.4204/EPTCS.17.8">DOI</a>&nbsp;|
+<a href="assets/vasconcelos.martins.cogumbreiro_type-inference-mil.pdf">.pdf</a>&nbsp;]
+
+</li>
+
+<li class="bib" id="cogumbreiro:compiling-pi-into-mtal">
+
+<b>Compiling the <em>pi</em>-calculus into a multithreaded typed assembly language</b>.
+ Tiago Cogumbreiro, Francisco Martins, and Vasco&nbsp;T. Vasconcelos.
+ In <em>PLACES</em>, volume 241 of <em>ENTCS</em>, page 57–84, 2009.
+[&nbsp;<a href="publications.html#cogumbreiro:compiling-pi-into-mtal">bib</a>&nbsp;|
+<a href="http://dx.doi.org/10.1016/j.entcs.2009.06.004">DOI</a>&nbsp;|
+<a href="assets/cogumbreiro.martins.vasconcelos_compiling-pi-into-mtal.pdf">.pdf</a>&nbsp;]
+
+</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="column is-4 is-centered">
+      <section id="cv">
+
+        <div id="experience" class="card"
+          style="width:40em;margin-top:1em;margin-right:1em">
+          <div class="card-header">
+            <h3 class="card-header-title">Experience</h3>
+          </div>
+          <div class="card-content">
+            <ul class="content">
+              <li><strong>(2018–ongoing) Assistant professor at <a
+                    href="https://www.cs.umb.edu/" title="University of
+                    Massachusetts Boston">UMass Boston</a></strong></li>
+              <li>(2017–2018) Postdoctoral researcher at <a title="Georgia
+                  Institute of Technology" href="http://gatech.edu/">Georgia
+                  Tech</a>, collaborating with <a
+                  href="http://vsarkar.rice.edu/">Vivek Sarkar</a></li>
+              <li>(2015–2017) Postdoctoral researcher at <a
+                  href="http://rice.edu/">Rice University</a>, collaborating
+                with <a href="http://vsarkar.cc.gatech.edu/">Vivek Sarkar</a></li>
+              <li>(2014) Research assistant at <a href="http://imperial.ac.uk/">Imperial
+                  College London</a>, collaborating with <a
+                  href="http://mrg.doc.ic.ac.uk/people/nobuko-yoshida/">Nobuko
+                  Yoshida</a></li>
+              <li>(2012) Visiting scholar at <a href="http://rice.edu/">Rice
+                  University</a>, collaborating with <a
+                  href="http://vsarkar.cc.gatech.edu/">Vivek Sarkar</a></li>
+            </ul></div>
+        </div>
+
+        <div id="education" class="card"
+          style="width:40em;margin-top:1em;margin-right:1em">
+          <div class="card-header">
+            <h3 class="card-header-title">Education</h3>
+          </div>
+          <div class="card-content">
+            <ul class="content">
+              <li> (2015) Ph.D. <a href="http://www.ulisboa.pt/">ULisboa</a>,
+                advised by <a href="http://homepages.di.fc.ul.pt/~fmartins/">Francisco
+                  Martins</a>, <a
+                      href="https://bitbucket.org/cogumbreiro/armus/downloads/cogumbreiro-phd-thesis.pdf">[PDF]</a></li>
+                  <li> (2009) M.Sc. <a href="http://www.ulisboa.pt/">ULisboa</a>,
+                    advised by <a
+                      href="http://homepages.di.fc.ul.pt/~fmartins/">Francisco
+                      Martins</a>, <a href="assets/cogumbreiro-msc-thesis.pdf">[PDF]</a>
+                  </li>
+                  <li> (2007) B.Sc. <a href="http://www.uac.pt/">Universidade
+                      dos Açores</a> </li>
+                </ul>
+              </div>
+            </div>
+
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+</body>
 </html>
