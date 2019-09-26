@@ -1,8 +1,9 @@
 .container{
-	border: .5px solid #000000;
+	border: .75px solid #FFFFFF;
 	padding-top:2px;
 	padding-bottom:2px;
 	padding-left:5px;
+	background-color:#f1f8fe;
 }
 .title{
 	font-family:Helvetica;
