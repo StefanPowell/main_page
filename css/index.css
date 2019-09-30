@@ -29,6 +29,14 @@ img{
 	margin-left:5px;
 	color:#000000;
 }
+.emp_head{
+	font-family:Helvetica;
+	font-size:12px;
+	padding-bottom:2px;
+	text-decoration:none;
+	margin-left:5px;
+	color:#000000;
+}
 li{
 	font-family:Helvetica;
 	font-size:11px;
@@ -45,5 +53,8 @@ button{
 	padding-left:8px;
 	font-family:cursive;
 	font-size:12px;
+}
+.job_desc{
+	margin-left:10px;
 }
 
