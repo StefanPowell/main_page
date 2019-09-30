@@ -1,5 +1,6 @@
 .container{
-	width:35%;
+	width:90%;
+	margin-left:5%;
 	border: .75px solid #FFFFFF;
 	padding-top:8px;
 	padding-bottom:15px;
@@ -57,4 +58,9 @@ button{
 .job_desc{
 	margin-left:10px;
 }
-
+.first_div, .second_div{
+	width:49%;
+}
+.second_div{
+	float:right;
+}
