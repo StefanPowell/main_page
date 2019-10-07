@@ -92,3 +92,15 @@ button{
 	font-weight:bold;
 	font-size:13px;
 }
+
+@media screen and (max-device-width: 480px){
+	.second_div{
+		display:none;
+	}
+	.first_div{
+		width:90%;
+	}
+	.container{
+		width:100%;
+	}
+}
