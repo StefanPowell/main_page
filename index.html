@@ -8,14 +8,14 @@
 <div class="header">
 	<div class="holder">
 		Stefan
-		<img alt="profile" src="img/photo.png">
+		<img alt="profile" src="img/photo.png" id="toggle_img">
 		Powell
 	</div>
 </div>
 <main>
 	<div>
 		<div class="second_div">
-			<a href="malito:powellstefan100@gmail."><button>Send Email</button></a>
+			<a href="malito:powellstefan100@gmail."><button id="email">Send Email</button></a>
 			<a href="https://www.facebook.com/stefan.powell.7"><button id="fb">Facebook</button></a>
 			<a href="https://www.instagram.com/powellstefan/"><button id="insta">Instagram</button></a>
 			<a href="https://github.com/StefanPowell"><button id="git">Github</button></a>
@@ -74,4 +74,14 @@
 		</div>
 	</div>
 </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#toggle_img").click(function(){
+	$("#git").toggle();
+	$("#insta").toggle();
+    $("#fb").toggle();
+  });
+});
+</script>
 </html>

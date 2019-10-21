@@ -94,13 +94,54 @@ button{
 }
 
 @media screen and (max-device-width: 480px){
-	.second_div{
+	.second_div .container{
 		display:none;
 	}
+	.second_div{
+		position:absolute;
+		bottom:15%;
+		margin-left: 20%;
+	}
+	.second_div button{
+		height:140px;
+		width:140px;
+		font-size:30px;
+		border-radius:100px;
+		display:none;
+	}
+	.second_div #email{
+		background-color:transparent;
+	}
+	.second_div #insta{
+		position:absolute;
+		top:-70%;
+		margin-left:130%;
+	}
+	.second_div #git{
+		top:-15%;
+		margin-left:72%;
+	}
+	.second_div #fb{
+		position:absolute;
+		top:100%;
+		margin-left:100%;
+	}
+	
 	.first_div{
 		width:90%;
 	}
 	.container{
 		width:100%;
+	}
+	img{
+		width: 140px;
+    height: 140px;
+    border-radius: 150px;
+    position: absolute;
+    bottom: 16%;
+    margin-left: 23%;
+	}
+	.header{
+		background-color:transparent;
 	}
 }
