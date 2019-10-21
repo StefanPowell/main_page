@@ -103,9 +103,9 @@ button{
 		margin-left: 20%;
 	}
 	.second_div button{
-		height:140px;
-		width:140px;
-		font-size:30px;
+		height: 120px;
+    	width: 120px;
+		font-size:25px;
 		border-radius:100px;
 		display:none;
 	}
@@ -115,7 +115,9 @@ button{
 	.second_div #insta{
 		position:absolute;
 		top:-70%;
-		margin-left:130%;
+		margin-left:117%;
+		animation: circle 10s linear infinite;
+		transform-origin:bottom left;
 	}
 	.second_div #git{
 		top:-15%;
@@ -144,4 +146,11 @@ button{
 	.header{
 		background-color:transparent;
 	}
+	@keyframes circle {
+    from { 	transform: rotate(0deg) translateX(50px); }
+	to   {  transform: rotate(360deg) translateX(50px); }
+	}
+	
+
+	
 }
