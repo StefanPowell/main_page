@@ -99,16 +99,66 @@ button{
 	width:100%;height:32%;
 }
 .inner_contain{
-	height:100%;width:31.25%;
+	height:100%;width:30.25%;
 	border:2px solid white;
 	float:left;
-	background-color:#bcc3e8;
+	background-color:#f1f8fe;
+	
 }
 .text{
 	font-family:Helvetica;
 	font-size:11px;
-	margin-left:10%;
+	margin-left:8%;
 	font-weight:bold;
+}
+#algorithm{
+	position: relative;
+	-webkit-animation-name: algo;
+  	-webkit-animation-duration: 30s;
+}
+#database{
+	position: relative;
+	-webkit-animation-name: database;
+  	-webkit-animation-duration: 30s;
+}
+#compilers{
+	position: relative;
+	-webkit-animation-name: compilers;
+  	-webkit-animation-duration: 30s;
+}
+#cyber{
+	position: relative;
+	-webkit-animation-name: cyber;
+  	-webkit-animation-duration: 30s;
+}
+
+@-webkit-keyframes algo {
+  0%   {left:0%; top:0%;}
+  25%  {left:64%; top:0%;}
+  50%  {left:64%; top:210%;}
+  75%  {left:0%; top:210%;}
+  100% {left:0%; top:0%;}
+}
+@-webkit-keyframes database {
+  0%   {left:0%; top:0%;}
+  25%  {left:0%; top:210%;}
+  50%  {left:-64%; top:210%;}
+  75%  {left:-64%; top:0%;}
+  100% {left:0%; top:0%;}
+}
+@-webkit-keyframes compilers {
+  0%   {left:0%; top:0%;}
+  25%  {left:-64%; top:0%;}
+  50%  {left:-64%; top:-210%;}
+  75%  {left:0%; top:-210%;}
+  100% {left:0%; top:0%;}
+}
+@-webkit-keyframes cyber {
+  0%   {left:0%; top:0%;}
+  25%  {left:0%; top:-210%;}
+  50%  {left:64%; top:-210%;}
+  75%  {left:64%; top:0%;}
+  100% {left:0%; top:0%;}
 }
 
 @media screen and (max-device-width: 480px){
@@ -168,7 +218,8 @@ button{
     from { 	transform: rotate(0deg) translateX(50px); }
 	to   {  transform: rotate(360deg) translateX(50px); }
 	}
-	
-
+	.main_contain{
+		display:none;	
+	}
 	
 }
