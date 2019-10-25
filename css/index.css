@@ -92,6 +92,24 @@ button{
 	font-weight:bold;
 	font-size:13px;
 }
+.main_contain{
+	width:60%;height:240px;margin-left:20%;margin-top:5%;
+}
+.sub_contain{
+	width:100%;height:32%;
+}
+.inner_contain{
+	height:100%;width:31.25%;
+	border:2px solid white;
+	float:left;
+	background-color:#bcc3e8;
+}
+.text{
+	font-family:Helvetica;
+	font-size:11px;
+	margin-left:10%;
+	font-weight:bold;
+}
 
 @media screen and (max-device-width: 480px){
 	.second_div .container{
