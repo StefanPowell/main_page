@@ -131,35 +131,33 @@ button{
 	-webkit-animation-name: cyber;
   	-webkit-animation-duration: 30s;
 }
+#os{
+	position: relative;
+	-webkit-animation-name: os;
+  	-webkit-animation-duration: 30s;
+}
+#ml{
+	position: relative;
+	-webkit-animation-name: ml;
+  	-webkit-animation-duration: 30s;
+}
+#data{
+	position: relative;
+	-webkit-animation-name: data;
+  	-webkit-animation-duration: 30s;
+}
+#web{
+	position: relative;
+	-webkit-animation-name: web;
+  	-webkit-animation-duration: 30s;
+}
+#cloud{
+	position: relative;
+	-webkit-animation-name: cloud;
+  	-webkit-animation-duration: 30s;
+}
 
-@-webkit-keyframes algo {
-  0%   {left:0%; top:0%;}
-  25%  {left:64%; top:0%;}
-  50%  {left:64%; top:210%;}
-  75%  {left:0%; top:210%;}
-  100% {left:0%; top:0%;}
-}
-@-webkit-keyframes database {
-  0%   {left:0%; top:0%;}
-  25%  {left:0%; top:210%;}
-  50%  {left:-64%; top:210%;}
-  75%  {left:-64%; top:0%;}
-  100% {left:0%; top:0%;}
-}
-@-webkit-keyframes compilers {
-  0%   {left:0%; top:0%;}
-  25%  {left:-64%; top:0%;}
-  50%  {left:-64%; top:-210%;}
-  75%  {left:0%; top:-210%;}
-  100% {left:0%; top:0%;}
-}
-@-webkit-keyframes cyber {
-  0%   {left:0%; top:0%;}
-  25%  {left:0%; top:-210%;}
-  50%  {left:64%; top:-210%;}
-  75%  {left:64%; top:0%;}
-  100% {left:0%; top:0%;}
-}
+
 
 @media screen and (max-device-width: 480px){
 	.second_div .container{

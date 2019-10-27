@@ -3,6 +3,8 @@
 <head>
 	<title>Stefan Powell</title>
 	 <link rel="icon" href="img/photo.png" type="image/png">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	 <script src="js/index.js"></script>
 	 <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
 </head>
 <div class="header">
@@ -39,10 +41,10 @@
 						<div class="inner_contain" id="ml">
 							<a class="text">Machine Learning</a>
 						</div>
-						<div class="inner_contain">
+						<div class="inner_contain" id="data">
 							<a class="text">Data Mining</a>
 						</div>
-						<div class="inner_contain">
+						<div class="inner_contain" id="web">
 							<a class="text">Web Design</a>
 						</div>
 					</div>
@@ -109,14 +111,4 @@
 		</div>
 	</div>
 </main>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#toggle_img").click(function(){
-	$("#git").toggle();
-	$("#insta").toggle();
-    $("#fb").toggle();
-  });
-});
-</script>
 </html>
