@@ -114,47 +114,47 @@ button{
 #algorithm{
 	position: relative;
 	-webkit-animation-name: algo;
-  	-webkit-animation-duration: 30s;
+  	-webkit-animation-duration: 10s;
 }
 #database{
 	position: relative;
 	-webkit-animation-name: database;
-  	-webkit-animation-duration: 30s;
+  	-webkit-animation-duration: 10s;
 }
 #compilers{
 	position: relative;
 	-webkit-animation-name: compilers;
-  	-webkit-animation-duration: 30s;
+  	-webkit-animation-duration: 10s;
 }
 #cyber{
 	position: relative;
 	-webkit-animation-name: cyber;
-  	-webkit-animation-duration: 30s;
+  	-webkit-animation-duration: 10s;
 }
 #os{
 	position: relative;
 	-webkit-animation-name: os;
-  	-webkit-animation-duration: 30s;
+  	-webkit-animation-duration: 10s;
 }
 #ml{
 	position: relative;
 	-webkit-animation-name: ml;
-  	-webkit-animation-duration: 30s;
+  	-webkit-animation-duration: 10s;
 }
 #data{
 	position: relative;
 	-webkit-animation-name: data;
-  	-webkit-animation-duration: 30s;
+  	-webkit-animation-duration: 10s;
 }
 #web{
 	position: relative;
 	-webkit-animation-name: web;
-  	-webkit-animation-duration: 30s;
+  	-webkit-animation-duration: 10s;
 }
 #cloud{
 	position: relative;
 	-webkit-animation-name: cloud;
-  	-webkit-animation-duration: 30s;
+  	-webkit-animation-duration: 10s;
 }
 
 
