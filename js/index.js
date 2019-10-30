@@ -1,3 +1,5 @@
+//phone view toggle add animation - jQuery
+
 $(document).ready(function(){
   $("#toggle_img").click(function(){
 	$("#git").toggle();
@@ -6,6 +8,7 @@ $(document).ready(function(){
   });
 });
 
+//code that animates containers
 //create triple array with current div poistions - top and left and element id
 var div_id = ['algo', 'os', 'database', 'ml', 'data', 'web', 'cyber', 'cloud', 'compilers']
 var containers = [
