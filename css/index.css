@@ -156,7 +156,22 @@ button{
 	-webkit-animation-name: cloud;
   	-webkit-animation-duration: 10s;
 }
+#hidden_div{
+	margin-top:2%;
+}
+.cancel_btn{
+	margin-left:95%;
 
+}
+.main{
+	display:block;
+}
+.links{
+	font-family:Helvetica;
+	font-size:12px;
+	font-weight:bold;
+	color:#101e6d;
+}
 
 
 @media screen and (max-device-width: 480px){

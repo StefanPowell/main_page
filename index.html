@@ -5,6 +5,7 @@
 	 <link rel="icon" href="img/photo.png" type="image/png">
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	 <script src="js/index.js"></script>
+	 <script src="js/popup.js"></script>
 	 <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
 </head>
 <div class="header">
@@ -14,7 +15,24 @@
 		Powell
 	</div>
 </div>
-<main>
+<div id="hidden_div" style="display:none;">
+			<button class="cancel_btn" onclick="hide()">Cancel</button>
+			<br/>
+			<div class="file_directory">
+				<div class="links">Personal Webpage</div>
+					<ul>
+						<li>index.html</li>
+						<li>css</li>
+						<li>img</li>
+						<li>js</li>
+							<ul>
+								<li>index.js</li>
+								<li>popup.js</li>
+							</ul>
+					</ul>
+			</div>
+</div>
+<main id="main">
 	<div>
 		<div class="second_div">
 			<a href="malito:powellstefan100@gmail."><button id="email">Send Email</button></a>
@@ -44,7 +62,7 @@
 						<div class="inner_contain" id="data">
 							<a class="text">Data Mining</a>
 						</div>
-						<div class="inner_contain" id="web">
+						<div class="inner_contain" id="web" onclick="web_design()">
 							<a class="text">Web Design</a>
 						</div>
 					</div>
@@ -81,6 +99,8 @@
 			</div>
 			<div class="container">
 			<div class="title">Github Projects</div>
+				<a href="" class="subtitle">Web Crawler : EarthQuake Data (2019)</a>
+				<li>Programming Languages : Python</li>
 				<a href="https://github.com/StefanPowell/Grade_System_CSEC_SBA" class="subtitle">Caribbean Examination Council Information Technology School Based Assessment (2019)</a>
 				<li>Programming Languages : Pascal</li>
 			</div>
