@@ -59,15 +59,21 @@ function animate(elementid, left, top, elementidnext, left_next, top_next){
 	document.getElementsByTagName("head")[0].appendChild(cssAnimation);
 }
 
-function compare(x1, x2){
+function compareleft (x1, x2){
 	if (x1 < x2){
 		x1 = x2 - x1;
 	}
 	if (x1 > x2){
-		x1 = 0 - x2;
+		x1 = 0 - x1;
 	}
-	else{
-		x1 = x1;
+	return x1;
+}
+function comparetop (x1, x2){
+	if (x1 < x2){
+		x1 = x2 - x1;
+	}
+	if (x1 > x2){
+		x1 = 0 - x1;
 	}
 	return x1;
 }
@@ -81,17 +87,11 @@ function set_animation(){
 	
 	temp_points = first_element_points;
 	
-	first_element_points[0] = compare(first_element_points[0], second_element_points[0]);
-	first_element_points[1] = compare(first_element_points[1], second_element_points[1]);
-	second_element_points[0] = compare(second_element_points[0], temp_points[0]);
-	second_element_points[1] = compare(second_element_points[1], temp_points[1]);
+	first_element_points[0] = compareleft(first_element_points[0], second_element_points[0]);
+	first_element_points[1] = comparetop(first_element_points[1], second_element_points[1]);
+	second_element_points[0] = compareleft(second_element_points[0], temp_points[0]);
+	second_element_points[1] = comparetop(second_element_points[1], temp_points[1]);
 	
 	animate(first_element_name, first_element_points[0], first_element_points[1], second_element_name, second_element_points[0], second_element_points[1]);
 }
 
-set_animation();
-
-
-//if element is one space away should take 5 seconds
-	//if element is two space away should take 10 seconds
-//should loop continuolsy happening at any time between a minute
