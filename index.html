@@ -16,23 +16,6 @@
 		Powell
 	</div>
 </div>
-<div id="hidden_div" style="display:none;">
-			<button class="cancel_btn" onclick="hide()">Cancel</button>
-			<br/>
-			<div class="file_directory">
-				<div class="links">Personal Webpage</div>
-					<ul>
-						<li>index.html</li>
-						<li>css</li>
-						<li>img</li>
-						<li>js</li>
-							<ul>
-								<li>index.js</li>
-								<li>popup.js</li>
-							</ul>
-					</ul>
-			</div>
-</div>
 <main id="main">
 	<div>
 		<div class="second_div">
@@ -40,42 +23,44 @@
 			<a href="https://www.facebook.com/stefan.powell.7" aria-label="facebook link"><button id="fb">Facebook</button></a>
 			<a href="https://www.instagram.com/powellstefan/" aria-label="instagram link"><button id="insta">Instagram</button></a>
 			<a href="https://github.com/StefanPowell" aria-label="github link"><button id="git">Github</button></a>
-			<div class="main_contain">
-				<button id="btn1">Animate height width</button>
+			<div class="main_contain" id="main_collage">
 					<div class="sub_contain">
-						<div class="inner_contain" id="algorithm">
+						<div class="inner_contain" id="algorithm" onclick="pop_up('Algorithms')">
 							<a class="text">Algorithms</a>
 						</div>
-						<div class="inner_contain" id="os">
+						<div class="inner_contain" id="os" onclick="pop_up('Operating Systems')">
 							<a class="text">Operating Systems</a>
 						</div>
-						<div class="inner_contain" id="database">
+						<div class="inner_contain" id="database" onclick="pop_up('Database Management')">
 							<a class="text">Database Management</a>
 						</div>
 					</div>
 					<div class="sub_contain">
-						<div class="inner_contain" id="ml">
+						<div class="inner_contain" id="ml" onclick="pop_up('Machine Learning')">
 							<a class="text">Machine Learning</a>
 						</div>
-						<div class="inner_contain" id="data">
+						<div class="inner_contain" id="data" onclick="pop_up('Data Mining')">
 							<a class="text">Data Mining</a>
 						</div>
-						<div class="inner_contain" id="web" onclick="web_design()">
+						<div class="inner_contain" id="web" onclick="pop_up('Web Design')">
 							<a class="text">Web Design</a>
 						</div>
 					</div>
 					<div class="sub_contain">
-						<div class="inner_contain" id="cyber">
+						<div class="inner_contain" id="cyber" onclick="pop_up('Cyber Security')">
 							<a class="text">Cybersecurity</a>
 						</div>
-						<div class="inner_contain" id="cloud">
+						<div class="inner_contain" id="cloud" onclick="pop_up('Cloud Computing')">
 							<a class="text">Cloud Computing</a>
 						</div>
-						<div class="inner_contain" id="compilers">
+						<div class="inner_contain" id="compilers" onclick="pop_up('Compilers')">
 							<a class="text">Compilers</a>
 						</div>
 					</div>
-				</div>
+			</div>
+			<div class="main_contain" id="pop_up" onclick="cancel()">
+				<a id="heading_text">Text</a>
+			</div>
 			    <div id="edu" class="container">
 				<div class="title">About Me </div>
 					<li>Grew up in Jamaica, Has a love for Computers and Information Technology</li>

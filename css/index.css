@@ -171,7 +171,16 @@ button{
 	font-weight:bold;
 	color:#101e6d;
 }
-
+#pop_up{
+	width:56%;
+	display:none;
+	background-color:#f1f8fe;
+}
+#heading_text{
+	font-size: 12px;
+    font-weight: bold;
+    margin-left: 1%;
+}
 
 @media screen and (max-device-width: 480px){
 	.second_div .container{

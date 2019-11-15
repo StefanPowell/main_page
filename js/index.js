@@ -8,13 +8,6 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
-  $("#compilers").click(function(){
-    $("#compilers").animate({width: "100%"});
-	$("#compilers").animate({height: "100%"});
-  });
-});
-
 //code that animates containers
 //create triple array with current div poistions - top and left and element id
 var div_id = ['algo', 'os', 'database', 'ml', 'data', 'web', 'cyber', 'cloud', 'compilers']
