@@ -43,6 +43,12 @@ li{
 	font-weight:normal;
 	margin-left:15px;
 }
+ul{
+	font-family:Helvetica;
+	font-size:12px;
+	font-weight:normal;
+	margin-left:-5%;
+}
 button{
 	border-radius:5px;
 	border:1px solid transparent;
@@ -71,6 +77,12 @@ button{
 	margin-top:-0.5%;
 	padding:0.5%;
 	padding-bottom:1%;
+}
+#in{
+	background-color:#0073b1;
+}
+#email{
+	background-color: #41a85f;
 }
 #fb{
 	background-color:#3578E5;
