@@ -85,7 +85,7 @@ button{
 	border:1px solid whitesmoke;
 }
 .holder{
-	margin-left:42.5%;
+	margin-left:0.5%;
 	color:#FFFFFF;
 	font-family:Helvetica;
 	font-weight:bold;
@@ -102,7 +102,7 @@ button{
 	border:2px solid white;
 	float:left;
 	background-color:#f1f8fe;
-	
+
 }
 .text{
 	font-family:Helvetica;
@@ -217,7 +217,7 @@ button{
 		top:100%;
 		margin-left:100%;
 	}
-	
+
 	.first_div{
 		width:90%;
 	}
@@ -252,7 +252,7 @@ button{
 	to   {  transform: rotate(360deg) translateX(50px); }
 	}
 	.main_contain{
-		display:none;	
+		display:none;
 	}
-	
+
 }
