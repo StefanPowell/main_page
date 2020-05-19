@@ -43,6 +43,10 @@ li{
 	font-weight:normal;
 	margin-left:15px;
 }
+li a{
+	text-decoration: none;
+	color:#000000;
+}
 ul{
 	font-family:Helvetica;
 	font-size:12px;
