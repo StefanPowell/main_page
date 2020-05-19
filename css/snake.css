@@ -34,10 +34,13 @@
   top:97%;
 }
 .user_info{
-  position: relative;
+  position: absolute;
+  top:10%;
+  margin-left:35%;
   width:19%;
   height:200px;
   float: right;
+  border:1px solid red;
 }
 .main_hold{
   border:1px solid red;
@@ -46,4 +49,36 @@
   width: 60%;
   margin-left: 20%;
   padding-top: 20%;
+}
+input[type=text] {
+  border-radius: 2%;
+  padding:2%;
+  border:2px solid #8842d5;
+}
+.button {
+  border:1px solid #8842d5;
+  background-color: #8842d5;
+  color:#FFFFFF;
+  margin-left: 40%;
+  font-family: helvetica;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5%;
+}
+.footer{
+  border: 1px solid green;
+    height: 30px;
+    bottom: 0%;
+    position: absolute;
+    width:101.4%;
+    margin-left: -2%;
+}
+.user_data{
+  margin-left:2%;
+  font-family: helvetica;
+  font-size: 12px;
+  font-weight: bold;
+}
+span{
+  padding-left: 5%;
 }

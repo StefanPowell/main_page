@@ -21,6 +21,10 @@ function create_blocks(){
   //  add id
 }
 
+function enter_user(){
+  
+}
+
 function checkpressed(x) {
     x = x || window.event;
     if( (x.keyCode == '37') & ((parseInt(current_player.position[0], 10))>0) ){
