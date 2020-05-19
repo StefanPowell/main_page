@@ -1,0 +1,32 @@
+.game_holder{
+  border:1px solid red;
+  width:60%;
+  height:400px;
+  margin-left: 20%;
+}
+.player{
+  display: block;
+  border:1px solid blue;
+  background-color: blue;
+  width: 5%;
+  height:12%;
+  position: relative;
+  margin-left: 50%;
+  top:98%;
+  border-radius: 100%;
+}
+.mouth{
+  height:50%;
+  border-left: 5px solid transparent;
+  border-bottom-left-radius: 75%;
+  border-bottom-right-radius: 75%;
+  border-left: 12px solid yellow;
+  border-right: 12px solid yellow;
+}
+.block{
+  border:1px solid green;
+  background-color: green;
+  width:1%;
+  height:2%;
+  border-radius: 100px;
+}
