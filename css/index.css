@@ -197,6 +197,27 @@ button{
     font-weight: bold;
     margin-left: 1%;
 }
+.code{
+	font-family: monospace;
+	font-size: 13px;
+	margin-left: 20%;
+	display: none;
+}
+.reason{
+	font-family: Helvetica;
+	font-weight: normal;
+	font-size: 13px;
+	margin-left: -30%;
+}
+.container li a{
+	font-size: 13px;
+	font-family: cursive;
+}
+.container li a:hover{
+	font-size: 13px;
+	font-family: cursive;
+	text-decoration: underline;
+}
 
 @media screen and (max-device-width: 480px){
 	.second_div .container{
@@ -250,8 +271,17 @@ button{
 	}
 	.header{
 		height:75px;
+		position: fixed;
+	}
+	#main{
+		padding-top:10%;
 	}
 	.holder{
+		font-size: 32px;
+		margin-left:38%;
+		padding-top:2%;
+	}
+	.holder img{
 		display:none;
 	}
 	.title{
