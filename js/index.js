@@ -47,7 +47,7 @@ function select_div(){
 function animate(elementid, left, top, elementidnext, left_next, top_next){
 	var cssAnimation = document.createElement('style');
 	cssAnimation.type = 'text/css';
-	
+
 	var first_rules = document.createTextNode('@-webkit-keyframes ' + elementid + ' {'+
 	  '0%   {left:0%; top:0%;}'+
 	  '100% {left:' + left + '%; top:' + top + '%;}'+
@@ -56,7 +56,7 @@ function animate(elementid, left, top, elementidnext, left_next, top_next){
 	  '0%   {left:0%; top:0%;}'+
 	  '100% {left:' + left_next + '%; top:' + top_next + '%;}'+
 	'}');
-	
+
 	cssAnimation.appendChild(first_rules);
 	cssAnimation.appendChild(second_rules);
 	document.getElementsByTagName("head")[0].appendChild(cssAnimation);
@@ -87,14 +87,26 @@ function set_animation(){
 	second_element_name = div_id[selected_elements[1]];
 	first_element_points = containers[selected_elements[0]];
 	second_element_points = containers[selected_elements[1]];
-	
+
 	temp_points = first_element_points;
-	
+
 	first_element_points[0] = compareleft(first_element_points[0], second_element_points[0]);
 	first_element_points[1] = comparetop(first_element_points[1], second_element_points[1]);
 	second_element_points[0] = compareleft(second_element_points[0], temp_points[0]);
 	second_element_points[1] = comparetop(second_element_points[1], temp_points[1]);
-	
+
 	animate(first_element_name, first_element_points[0], first_element_points[1], second_element_name, second_element_points[0], second_element_points[1]);
 }
 
+function algo_hover(){
+  document.getElementById('edu_heading').innerHTML = "Web Parsing Algorithm";
+  document.getElementById('algo_code').style.display = "block";
+  document.getElementById('edu_text').style.display = "none";
+}
+
+function algo_remove(){
+  document.getElementById('edu_heading').innerHTML = "About Me";
+  text = "def web_partition(start, end, code) <br/> keep_first_parse = []";
+  document.getElementById('algo_code').style.display = "none";
+  document.getElementById('edu_text').style.display = "block";
+}
