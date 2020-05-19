@@ -1,13 +1,13 @@
 .game_holder{
   border:1px solid red;
-  width:60%;
+  width:50%;
   height:400px;
   margin-left: 20%;
 }
 .player{
   display: block;
   border:1px solid blue;
-  background-color: blue;
+  background-color: transparent;
   width: 5%;
   height:12%;
   position: relative;
@@ -20,13 +20,30 @@
   border-left: 5px solid transparent;
   border-bottom-left-radius: 75%;
   border-bottom-right-radius: 75%;
-  border-left: 12px solid yellow;
-  border-right: 12px solid yellow;
+  border-left: 12px solid #000000;
+  border-right: 12px solid #000000;
 }
 .block{
+  position: relative;
   border:1px solid green;
   background-color: green;
   width:1%;
   height:2%;
   border-radius: 100px;
+  margin-left: 51.75%;
+  top:97%;
+}
+.user_info{
+  position: relative;
+  width:19%;
+  height:200px;
+  float: right;
+}
+.main_hold{
+  border:1px solid red;
+}
+.info_hold{
+  width: 60%;
+  margin-left: 20%;
+  padding-top: 20%;
 }
