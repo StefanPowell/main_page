@@ -6,8 +6,8 @@
 }
 .player{
   display: block;
-  border:1px solid blue;
-  background-color: red;
+  border:1px solid green;
+  background-color: green;
   width:1%;
   height:2%;
   position: relative;
@@ -15,18 +15,10 @@
   top:0%;
   border-radius: 100%;
 }
-.mouth{
-  height:50%;
-  border-left: 5px solid transparent;
-  border-bottom-left-radius: 75%;
-  border-bottom-right-radius: 75%;
-  border-left: 12px solid #000000;
-  border-right: 12px solid #000000;
-}
 .block{
   position: relative;
-  border:1px solid green;
-  background-color: green;
+  border:1px solid #FFFFFF;
+  background-color: #000000;
   width:1%;
   height:2%;
   border-radius: 100px;
