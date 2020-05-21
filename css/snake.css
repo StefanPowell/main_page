@@ -1,5 +1,5 @@
 .game_holder{
-  border:1px solid red;
+  border:2px solid whitesmoke;
   width:50%;
   height:400px;
   margin-left: 20%;
@@ -7,12 +7,12 @@
 .player{
   display: block;
   border:1px solid blue;
-  background-color: transparent;
-  width: 5%;
-  height:12%;
+  background-color: red;
+  width:1%;
+  height:2%;
   position: relative;
-  margin-left: 50%;
-  top:98%;
+  margin-left: 0%;
+  top:0%;
   border-radius: 100%;
 }
 .mouth{
@@ -81,4 +81,13 @@ input[type=text] {
 }
 span{
   padding-left: 5%;
+}
+.screen{
+  border:1px solid transparent;
+}
+.board_score{
+  margin-left: 20%;
+  font-family: Helvetiva;
+  font-size:12px;
+  font-weight: 200;
 }

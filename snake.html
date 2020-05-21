@@ -8,27 +8,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   	 <script src="js/jquery-1.11.1.js"></script>
   	 <script src="js/snake.js"></script>
-  <body>
-    <div class="main_hold">
+  <body onload="start()">
+    <div class="screen">
       <div class="game_holder" id="game_hold">
-        <div class="block" id=""></div>
+        <div class="block" id="food"></div>
         <div class="player" id="play_er">
-          <div class="mouth">
-          </div>
         </div>
       </div>
-      <div class="user_info">
-        <div class="info_hold">
-          <input type="text" name="" placeholder="Enter Name"><br/>
-          <button type="button" onclick="enter_user()" class="button">Start</button>
-        </div>
+      <div class="board_score">
+      Scoreboard:&nbsp;<a id="score">0</a>
       </div>
-    </div>
-  <div class="footer">
-    <div class="user_data">
-      <span> User : </span>
-      <span> Score : </span>
-    </div>
-  </div>
+   </div>
   </body>
 </html>
