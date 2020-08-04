@@ -6,6 +6,7 @@
   	 <link rel="stylesheet" type="text/css" href="css/game.css" media="screen" />
   </head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   	 <script src="js/jquery-1.11.1.js"></script>
   	 <script src="js/game.js"></script>
   <body onload="start()">
@@ -15,8 +16,9 @@
         <div class="player" id="play_er">
         </div>
       </div>
-      <div class="board_score">
-      Scoreboard:&nbsp;<a id="score">0</a>
+      <div ng-app="" ng-init="user=''" class="board_score">
+        <div><input id="usertext" ng-model="user" type="text" placeholder="Enter Username" value="{{user}}"><button onclick="toggle_userinput()"><a id="btnsave">Save</a></button></div>
+        <div id="scoreboard"><a>{{user}}</a> Scoreboard:&nbsp;<a id="score">0</a></div>
       </div>
    </div>
   </body>

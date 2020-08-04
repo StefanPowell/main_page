@@ -80,3 +80,11 @@ function checkpressed(x) {
     }
     did_eat();
 }
+
+function toggle_userinput(){
+  btn_status = document.getElementById("btnsave").innerHTML;
+  if(btn_status == "Save"){
+    document.getElementById("usertext").disabled = true;
+    document.getElementById("btnsave").innerHTML = "Done";
+  }
+}
