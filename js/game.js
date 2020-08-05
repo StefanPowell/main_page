@@ -14,7 +14,7 @@ function Food(x_pos, y_pos){
   this.y_pos = y_pos;
 }
 
-function make_food(){
+function make_food(size){
   random_xx = Math.floor(Math.random() * 100);
   random_yy = Math.floor(Math.random() * 95) + -3;
   food = new Food(random_xx, random_yy);
@@ -29,7 +29,8 @@ function start(){
   current_player = new Player(random_x, random_y, 0);
   document.getElementById('play_er').style.marginLeft =  random_x.toString() + "%";
   document.getElementById('play_er').style.top = random_y.toString() + "%";
-  make_food();
+  rand_size = Math.floor(Math.random() * 5);
+  make_food(rand_size);
 }
 
 function did_eat(){
@@ -38,7 +39,8 @@ function did_eat(){
     &
     ((current_player.position[1]>((food.y_pos)-1)) & (current_player.position[1]<((food.y_pos)+1))))
     {
-      make_food();
+      rand_size = Math.floor(Math.random() * 5);
+      make_food(rand_size);
       current_player.score = current_player.update();
       document.getElementById('score').innerHTML = current_player.score;
     }

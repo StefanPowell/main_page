@@ -5,7 +5,7 @@
 	padding-top:8px;
 	padding-bottom:15px;
 	padding-left:5px;
-	background-color:#d0d5f5;
+	background-color:#f5f5f5;
 	margin-top:20px;
     box-shadow: 1px 2px 4px 5px #ccc;
 }
@@ -16,12 +16,12 @@
 	padding-bottom:5px;
 }
 img{
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
 	position: absolute;
-	margin-left: 45%;
-	top:10%;
+	margin-left: 43%;
+	top:7.5%;
 }
 .holder h4{
 	position: absolute;
@@ -87,6 +87,10 @@ ul{
 	font-weight:normal;
 	margin-left:-5%;
 }
+.i-btn{
+	width: 15%;
+	margin-left: 41%;
+}
 button{
 	border-radius:5px;
 	border:1px solid transparent;
@@ -116,22 +120,10 @@ button{
 	padding:0.5%;
 	padding-bottom:1%;
 }
-#in{
-	background-color:#0073b1;
-}
-#email{
-	background-color: #41a85f;
-}
-#fb{
-	background-color:#3578E5;
-}
-#insta{
-	background-color: #833AB4; /* For browsers that do not support gradients */
-   background-image: linear-gradient(#833AB4, #F77737);
-}
-#git{
+
+#git, #in, #email{
 	background-color: #FFFFFF;
-	color:#000000;
+	color:#3f51b5;
 	border:1px solid whitesmoke;
 }
 .holder{
@@ -152,7 +144,7 @@ button{
 	height:100%;width:30.25%;
 	border:2px solid white;
 	float:left;
-	background-color:#d0d5f5;
+	background-color:#f5f5f5;
 
 }
 .text{
@@ -225,7 +217,7 @@ button{
 #pop_up{
 	width:56%;
 	display:none;
-	background-color:#d0d5f5;
+	background-color:#f5f5f5;
 }
 .code{
 	font-family: monospace;
@@ -267,7 +259,7 @@ button{
 	}
 	.second_div button{
 		height: 120px;
-    	width: 120px;
+    width: 120px;
 		font-size:25px;
 		border-radius:100px;
 		display:none;
