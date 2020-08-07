@@ -257,6 +257,14 @@ button{
 	font-weight: normal;
 	margin-left: 10%;
 }
+.resume{
+	font-weight:bold;
+	font-size: 12px;
+	color:#000000;
+	margin-left: 10%;
+	text-decoration: none;
+	padding-top:1%;
+}
 
 @media screen and (max-device-width: 480px){
 	.second_div .container{
@@ -339,5 +347,4 @@ button{
 	.main_contain{
 		display:none;
 	}
-
 }
