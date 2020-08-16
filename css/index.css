@@ -347,4 +347,10 @@ button{
 	.main_contain{
 		display:none;
 	}
+	.holder h4{
+		display: none;
+	}
+	.i-btn{
+		display:none;
+	}
 }
