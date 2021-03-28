@@ -1,0 +1,77 @@
+.othello_board{
+  width:500px;
+  height:500px;
+}
+.othello_board div{
+width:50px;
+float:right;
+}
+.othello_board div div{
+border:1px solid #d1d8de;
+height:48px;
+width:48px;
+}
+.othello_board div div span{
+position:relative;
+top:30%;
+margin-left:40%;
+font-size:20px;
+font-weight:bold;
+}
+
+/* black token */
+.othello_board div .inside span{
+color:#000000;
+background-color: #000000;
+top: 20%;
+padding-top: 10%;
+border-radius: 50%;
+margin-left: 15%;
+margin-right: 15%;
+box-shadow: 1px 4px 1px 0px #757070;
+display: none;
+}
+.outside{
+background-color:#d1d8de;
+}
+.inside{
+background-color:#f0f3f5;
+}
+button{
+border:1px solid transparent;
+background-color: #173d9a;
+color:#FFFFFF;
+padding: 10px;
+border-radius: 10%;
+}
+.name_taker{
+border: 2px solid transparent;
+}
+input[type=text] {
+border: 2px solid #d1d8de;
+background-color: #d1d8de;
+margin-left: 1%;
+top:1%;
+width:14.65%;
+}
+.game_log{
+border:2px solid #d1d8de;
+height:15%;
+box-shadow: 6px 10px 10px 1px #757070;
+overflow: hidden;
+}
+.game_log div{
+border: 1px solid greysmoke;
+width:99%;
+font-family: "Times New Roman", Times, serif;
+font-size: 13px;
+font-weight: lighter;
+padding-left: 1%;
+}
+
+.playerOneToken{
+  background-color: blueviolet;
+}
+.playerTwoToken{
+  background-color: greenyellow;
+}

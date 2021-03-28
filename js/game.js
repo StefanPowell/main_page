@@ -12,15 +12,23 @@ function Player(x_pos, y_pos, score) {
 function Food(x_pos, y_pos){
   this.x_pos = x_pos;
   this.y_pos = y_pos;
+  this.create = function(){
+	document.getElementById('food').style.marginLeft = x_pos.toString() + "%";
+	document.getElementById('food').style.top = y_pos.toString() + "%";
+  }
+  this.move = function(){
+	new_x = Math.floor(Math.random() * 100);
+	new_y = ((Math.floor(Math.random() * 95) + -3) + 2.5);
+	$("#food").animate({left: "" + new_x.toString() +"%"});
+	$("#food").animate({top: "" + new_y.toString() +"%"});
+  }
 }
 
-function make_food(size){
+function make_food(){
   random_xx = Math.floor(Math.random() * 100);
-  random_yy = Math.floor(Math.random() * 95) + -3;
+  random_yy = (Math.floor(Math.random() * 95) + -3) + 2.5;
   food = new Food(random_xx, random_yy);
-  random_yy_design = random_yy + 2.5;
-  document.getElementById('food').style.marginLeft = random_xx.toString() + "%";
-  document.getElementById('food').style.top = random_yy_design.toString() + "%";
+  food.create();
 }
 
 function start(){
@@ -29,18 +37,17 @@ function start(){
   current_player = new Player(random_x, random_y, 0);
   document.getElementById('play_er').style.marginLeft =  random_x.toString() + "%";
   document.getElementById('play_er').style.top = random_y.toString() + "%";
-  rand_size = Math.floor(Math.random() * 5);
-  make_food(rand_size);
+  make_food();
 }
 
 function did_eat(){
   if
-    (((current_player.position[0]>((food.x_pos)-1)) & (current_player.position[0]<((food.x_pos)+1)))
+    (((current_player.position[0]>((food.x_pos)-2)) & (current_player.position[0]<((food.x_pos)+2)))
     &
-    ((current_player.position[1]>((food.y_pos)-1)) & (current_player.position[1]<((food.y_pos)+1))))
+    ((current_player.position[1]>((food.y_pos)-2)) & (current_player.position[1]<((food.y_pos)+2))))
     {
       rand_size = Math.floor(Math.random() * 5);
-      make_food(rand_size);
+      make_food();
       current_player.score = current_player.update();
       document.getElementById('score').innerHTML = current_player.score;
     }
@@ -90,3 +97,9 @@ function toggle_userinput(){
     document.getElementById("btnsave").innerHTML = "Done";
   }
 }
+
+setInterval(function updatefood(){
+	food.move();
+}, 10000)
+
+

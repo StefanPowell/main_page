@@ -1,0 +1,138 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script src="index.js"></script>
+</head>
+<div class="screen">
+  <div class="othello_board" onclick="coordinates(event)"">
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span></span></div>
+    </div>
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="inside"  id="h_1"><span id="h1">.</span></div>
+      <div class="inside"  id="h_2"><span id="h2">.</span></div>
+      <div class="inside"  id="h_3"><span id="h3">.</span></div>
+      <div class="inside"  id="h_4"><span id="h4">.</span></div>
+      <div class="inside"  id="h_5"><span id="h5">.</span></div>
+      <div class="inside"  id="h_6"><span id="h6">.</span></div>
+      <div class="inside"  id="h_7"><span id="h7">.</span></div>
+      <div class="inside"  id="h_8"><span id="h8">.</span></div>
+      <div class="outside"><span>h</span></div>
+    </div>
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="inside"  id="g_1"><span id="g1">.</span></div>
+      <div class="inside"  id="g_2"><span id="g2">.</span></div>
+      <div class="inside"  id="g_3"><span id="g3">.</span></div>
+      <div class="inside"  id="g_4"><span id="g4">.</span></div>
+      <div class="inside"  id="g_5"><span id="g5">.</span></div>
+      <div class="inside"  id="g_6"><span id="g6">.</span></div>
+      <div class="inside"  id="g_7"><span id="g7">.</span></div>
+      <div class="inside"  id="g_8"><span id="g8">.</span></div>
+      <div class="outside"><span>g</span></div>
+    </div>
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="inside"  id="f_1"><span id="f1">.</span></div>
+      <div class="inside"  id="f_2"><span id="f2">.</span></div>
+      <div class="inside"  id="f_3"><span id="f3">.</span></div>
+      <div class="inside"  id="f_4"><span id="f4">.</span></div>
+      <div class="inside"  id="f_5"><span id="f5">.</span></div>
+      <div class="inside"  id="f_6"><span id="f6">.</span></div>
+      <div class="inside"  id="f_7"><span id="f7">.</span></div>
+      <div class="inside"  id="f_8"><span id="f8">.</span></div>
+      <div class="outside"><span>f</span></div>
+    </div>
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="inside"  id="e_1"><span id="e1">.</span></div>
+      <div class="inside"  id="e_2"><span id="e2">.</span></div>
+      <div class="inside"  id="e_3"><span id="e3">.</span></div>
+      <div class="inside"  id="e_4"><span id="e4">.</span></div>
+      <div class="inside"  id="e_5"><span id="e5">.</span></div>
+      <div class="inside"  id="e_6"><span id="e6">.</span></div>
+      <div class="inside"  id="e_7"><span id="e7">.</span></div>
+      <div class="inside"  id="e_8"><span id="e8">.</span></div>
+      <div class="outside"><span>e</span></div>
+    </div>
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="inside"  id="d_1"><span id="d1">.</span></div>
+      <div class="inside"  id="d_2"><span id="d2">.</span></div>
+      <div class="inside"  id="d_3"><span id="d3">.</span></div>
+      <div class="inside"  id="d_4"><span id="d4">.</span></div>
+      <div class="inside"  id="d_5"><span id="d5">.</span></div>
+      <div class="inside"  id="d_6"><span id="d6">.</span></div>
+      <div class="inside"  id="d_7"><span id="d7">.</span></div>
+      <div class="inside"  id="d_8"><span id="d8">.</span></div>
+      <div class="outside"><span>d</span></div>
+    </div>
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="inside"  id="c_1"><span id="c1">.</span></div>
+      <div class="inside"  id="c_2"><span id="c2">.</span></div>
+      <div class="inside"  id="c_3"><span id="c3">.</span></div>
+      <div class="inside"  id="c_4"><span id="c4">.</span></div>
+      <div class="inside"  id="c_5"><span id="c5">.</span></div>
+      <div class="inside"  id="c_6"><span id="c6">.</span></div>
+      <div class="inside"  id="c_7"><span id="c7">.</span></div>
+      <div class="inside"  id="c_8"><span id="c8">.</span></div>
+      <div class="outside"><span>c</span></div>
+    </div>
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="inside" id="b_1"><span id="b1">.</span></div>
+      <div class="inside" id="b_2"><span id="b2">.</span></div>
+      <div class="inside" id="b_2"><span id="b3">.</span></div>
+      <div class="inside" id="b_4"><span id="b4">.</span></div>
+      <div class="inside" id="b_5"><span id="b5">.</span></div>
+      <div class="inside" id="b_6"><span id="b6">.</span></div>
+      <div class="inside" id="b_7"><span id="b7">.</span></div>
+      <div class="inside" id="b_8"><span id="b8">.</span></div>
+      <div class="outside"><span>b</span></div>
+    </div>
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="inside" id="a_1"><span id="a1">.</span></div>
+      <div class="inside" id="a_2"><span id="a2">.</span></div>
+      <div class="inside" id="a_3"><span id="a3">.</span></div>
+      <div class="inside" id="a_4"><span id="a4">.</span></div>
+      <div class="inside" id="a_5"><span id="a5">.</span></div>
+      <div class="inside" id="a_6"><span id="a6">.</span></div>
+      <div class="inside" id="a_7"><span id="a7">.</span></div>
+      <div class="inside"><span id="a8">.</span></div>
+      <div class="outside"><span>a</span></div>
+    </div>
+    <div>
+      <div class="outside"><span></span></div>
+      <div class="outside"><span>1</span></div>
+      <div class="outside"><span>2</span></div>
+      <div class="outside"><span>3</span></div>
+      <div class="outside"><span>4</span></div>
+      <div class="outside"><span>5</span></div>
+      <div class="outside"><span>6</span></div>
+      <div class="outside"><span>7</span></div>
+      <div class="outside"><span>8</span></div>
+      <div class="outside"><span></span></div>
+    </div>
+  </div>
+  <div class="name_taker">
+    <input type="text" placeholder="Enter Player 1" id="first_player_input">
+    <input type="text" placeholder="Enter Player 2" id="second_player_input">
+  </div>
+</div>
+  <center><button onclick="start_game()" id="main_btn">Start Game</button></center>
+  <br/>
+<div class="game_log" id="logs">
+</div>
+</html>
