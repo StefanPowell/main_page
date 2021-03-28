@@ -2,6 +2,12 @@
 <head>
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <script src="index.js"></script>
+  <script>
+	var worker = new Worker('Loop.js');
+	worker.onmessage = function (event) {
+            alert("Completed " + event.data + "iterations" );
+    };
+  </script>
 </head>
 <div class="screen">
   <div class="othello_board" onclick="coordinates(event)"">
